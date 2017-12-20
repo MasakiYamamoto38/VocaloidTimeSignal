@@ -20,7 +20,7 @@ namespace VocaloidTimeSignal
             var files = nm_jp.GetHourMin(time);
             foreach(string file in files)
             {
-                MessageBox.Show(file);
+                //MessageBox.Show(file);
                 PlaySingleSound(file);
             }
 

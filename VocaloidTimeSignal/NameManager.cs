@@ -69,7 +69,7 @@ namespace VocaloidTimeSignal
             dirs = new string[3];
             dirs[0] = lngDir + "\\hc" + h + ".wav";
             dirs[1] = lngDir + "\\mc" + (m / 10) + ".wav";
-            dirs[2] = lngDir + "\\mn" + m + ".wav";
+            dirs[2] = lngDir + "\\mn" + (m % 10 ) + ".wav";
             return dirs;
         }
 
