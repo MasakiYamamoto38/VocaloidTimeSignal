@@ -1,0 +1,15 @@
+D:\Media\MyProjects\VocaloidTimeSignal\VocaloidTimeSignal\VocaloidTimeSignal\obj\Debug\VocaloidTimeSignal.csprojResolveAssemblyReference.cache
+D:\Media\MyProjects\VocaloidTimeSignal\VocaloidTimeSignal\VocaloidTimeSignal\obj\Debug\MainWindow.g.cs
+D:\Media\MyProjects\VocaloidTimeSignal\VocaloidTimeSignal\VocaloidTimeSignal\obj\Debug\App.g.cs
+D:\Media\MyProjects\VocaloidTimeSignal\VocaloidTimeSignal\VocaloidTimeSignal\obj\Debug\VocaloidTimeSignal_MarkupCompile.cache
+D:\Media\MyProjects\VocaloidTimeSignal\VocaloidTimeSignal\VocaloidTimeSignal\obj\Debug\VocaloidTimeSignal_MarkupCompile.lref
+D:\Media\MyProjects\VocaloidTimeSignal\VocaloidTimeSignal\VocaloidTimeSignal\bin\Debug\VocaloidTimeSignal.exe.config
+D:\Media\MyProjects\VocaloidTimeSignal\VocaloidTimeSignal\VocaloidTimeSignal\bin\Debug\VocaloidTimeSignal.exe
+D:\Media\MyProjects\VocaloidTimeSignal\VocaloidTimeSignal\VocaloidTimeSignal\bin\Debug\VocaloidTimeSignal.pdb
+D:\Media\MyProjects\VocaloidTimeSignal\VocaloidTimeSignal\VocaloidTimeSignal\obj\Debug\MainWindow.baml
+D:\Media\MyProjects\VocaloidTimeSignal\VocaloidTimeSignal\VocaloidTimeSignal\obj\Debug\VocaloidTimeSignal.g.resources
+D:\Media\MyProjects\VocaloidTimeSignal\VocaloidTimeSignal\VocaloidTimeSignal\obj\Debug\VocaloidTimeSignal.Properties.Resources.resources
+D:\Media\MyProjects\VocaloidTimeSignal\VocaloidTimeSignal\VocaloidTimeSignal\obj\Debug\VocaloidTimeSignal.csproj.GenerateResource.Cache
+D:\Media\MyProjects\VocaloidTimeSignal\VocaloidTimeSignal\VocaloidTimeSignal\obj\Debug\VocaloidTimeSignal.csproj.CoreCompileInputs.cache
+D:\Media\MyProjects\VocaloidTimeSignal\VocaloidTimeSignal\VocaloidTimeSignal\obj\Debug\VocaloidTimeSignal.exe
+D:\Media\MyProjects\VocaloidTimeSignal\VocaloidTimeSignal\VocaloidTimeSignal\obj\Debug\VocaloidTimeSignal.pdb
