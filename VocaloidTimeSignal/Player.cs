@@ -9,30 +9,29 @@ namespace VocaloidTimeSignal
 {
     static class Player
     {
+        private static string voiceDir = @"D:\Media\Music\wav";
+        private static NameManager nm_jp = new NameManager(language.Miku_jp, voiceDir);
 
         public static bool Play()
         { return Play(DateTime.Now); }
 
         public static bool Play(DateTime time)
         {
-            //数字（時）
+            var files = nm_jp.GetHourMin(time);
+            foreach(string file in files)
+            {
+                MessageBox.Show(file);
+                PlaySingleSound(file);
+            }
 
-            //時
-
-
-            //数字(分)
-
-            //分
-
-
-            return false;
+            return true;
         }
 
-        private static bool PlaySingleSound()
+        private static bool PlaySingleSound(string path)
         {
             try
             {
-                var ply = new System.Media.SoundPlayer("hogehoge.wav");
+                var ply = new System.Media.SoundPlayer(path);
                 ply.PlaySync();
             }
             catch(Exception e)
