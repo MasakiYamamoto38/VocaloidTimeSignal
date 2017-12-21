@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Media;
 
 namespace VocaloidTimeSignal
 {
@@ -19,12 +20,22 @@ namespace VocaloidTimeSignal
         public static bool Play(DateTime time)
         {
             var files = nm_jp.GetHourMin(time);
+            var plys = new SoundPlayer[files.Length];
 
-            foreach(string file in files)
-            {
-                //MessageBox.Show(file);
-                PlaySingleSound(file);
-            }
+
+            //まとめてメモリ確保
+            for(var i = 0; i < plys.Length; i++)
+                plys[i] = new SoundPlayer(files[i]);
+            foreach(SoundPlayer sp in plys)
+                sp.PlaySync();
+            foreach (SoundPlayer sp in plys)
+                sp.Dispose();
+            
+            //foreach (string file in files)
+            //{
+            //    //MessageBox.Show(file);
+            //    PlaySingleSound(file);
+            //}
 
             return true;
         }

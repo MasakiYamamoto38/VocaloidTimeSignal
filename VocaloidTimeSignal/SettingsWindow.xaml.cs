@@ -26,6 +26,13 @@ namespace VocaloidTimeSignal
         public SettingsWindow()
         {
             InitializeComponent();
+            //tw未対応なため
+            mikuTf = true;
+            xinHuaTf = false;
+            checkBoxTw.IsEnabled = false;
+            checkBoxJp.IsEnabled = false;
+
+            //
             UpdateControls();
             checkBoxTw.IsChecked = xinHuaTf;
             checkBoxJp.IsChecked = mikuTf;
@@ -53,7 +60,7 @@ namespace VocaloidTimeSignal
 
         private void btn_up_Click(object sender, RoutedEventArgs e)
         {
-            if (interval >= 90) return;
+            if (interval >= 30) return;
             interval += 10;
             UpdateControls();
         }
