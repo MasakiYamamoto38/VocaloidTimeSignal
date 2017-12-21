@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VocaloidTimeSignal"
         mc:Ignorable="d"
-        Title="MainWindow" Height="356.244" Width="337.686">
+        Title="MainWindow" Height="288.256" Width="337.686">
     <Grid>
-        <Button x:Name="btn1" Content="今何時？　現在幾點？　现在几点？" Margin="10,0,9.667,9.667" VerticalAlignment="Bottom" BorderThickness="0" BorderBrush="#FF2E86B8" Background="#FF2E86B8" Foreground="White" Height="23" Click="Button_Click"/>
-        <Button x:Name="btn2" Content="設定" HorizontalAlignment="Right" Margin="0,10,9.667,0" VerticalAlignment="Top" Width="75" Click="btn2_Click"/>
+        <Button x:Name="btn1" Content="今何時？" Margin="10,0,0,9.667" VerticalAlignment="Bottom" BorderThickness="0" BorderBrush="#FF2E86B8" Background="#FF2E86B8" Foreground="White" Height="26" Click="Button_Click" HorizontalAlignment="Left" Width="90"/>
+        <Button x:Name="btn2" Content="設定" HorizontalAlignment="Right" Margin="0,0,10.333,9.667" VerticalAlignment="Bottom" Width="90" Click="btn2_Click" BorderBrush="{x:Null}" Background="#FFCDCDCD" Foreground="White" Height="26"/>
+        <Image Margin="124,0,119.333,-10.333" Source="miku_normal.png" Width="88" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
 
     </Grid>
 </Window>

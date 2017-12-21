@@ -23,13 +23,18 @@ namespace VocaloidTimeSignal
             var plys = new SoundPlayer[files.Length];
 
 
-            //まとめてメモリ確保
-            for(var i = 0; i < plys.Length; i++)
-                plys[i] = new SoundPlayer(files[i]);
-            foreach(SoundPlayer sp in plys)
-                sp.PlaySync();
-            foreach (SoundPlayer sp in plys)
-                sp.Dispose();
+            try
+            {
+                //まとめてメモリ確保
+                for (var i = 0; i < plys.Length; i++)
+                    plys[i] = new SoundPlayer(files[i]);
+                foreach (SoundPlayer sp in plys)
+                    sp.PlaySync();
+                foreach (SoundPlayer sp in plys)
+                    sp.Dispose();
+            }
+            catch (Exception e)
+            { MessageBox.Show(e.Message, "音の再生に失敗しました"); return false; }
             
             //foreach (string file in files)
             //{
