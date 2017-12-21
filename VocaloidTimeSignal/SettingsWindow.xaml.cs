@@ -19,9 +19,57 @@ namespace VocaloidTimeSignal
     /// </summary>
     public partial class SettingsWindow : Window
     {
+        private int interval = VocaloidTimeSignal.Properties.Settings.Default.interval;
+        private bool mikuTf = VocaloidTimeSignal.Properties.Settings.Default.lng_jp;
+        private bool xinHuaTf = VocaloidTimeSignal.Properties.Settings.Default.lng_tw;
+
         public SettingsWindow()
         {
             InitializeComponent();
+            UpdateControls();
+            checkBoxTw.IsChecked = xinHuaTf;
+            checkBoxJp.IsChecked = mikuTf;
+            tBlockMin.Text = interval + "";
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            VocaloidTimeSignal.Properties.Settings.Default.lng_tw = xinHuaTf;
+            VocaloidTimeSignal.Properties.Settings.Default.lng_jp = mikuTf;
+            VocaloidTimeSignal.Properties.Settings.Default.interval = interval;
+            VocaloidTimeSignal.Properties.Settings.Default.Save();
+        }
+
+        private void checkBox_Click(object sender, RoutedEventArgs e)
+        {
+            xinHuaTf =  (bool)checkBoxTw.IsChecked;
+            mikuTf = (bool)checkBoxJp.IsChecked;
+        }
+
+        private void Button_Close_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_up_Click(object sender, RoutedEventArgs e)
+        {
+            if (interval >= 130) return;
+            interval += 10;
+            UpdateControls();
+        }
+
+        private void btn_dw_Click(object sender, RoutedEventArgs e)
+        {
+            if (interval <= 0) return;
+            interval -= 10;
+            UpdateControls();
+        }
+
+        private void UpdateControls()
+        {
+            checkBoxTw.IsChecked = xinHuaTf;
+            checkBoxJp.IsChecked = mikuTf;
+            tBlockMin.Text = interval + "";
         }
     }
 }

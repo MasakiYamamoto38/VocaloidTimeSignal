@@ -49,13 +49,16 @@ namespace VocaloidTimeSignal
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            btn1.IsEnabled = false;
+            ApplicationTools.DoEvents();
+
             Player.Play(DateTime.Now);
+            btn1.IsEnabled = true;
         }
 
         private void btn2_Click(object sender, RoutedEventArgs e)
         {
-            //MessageBox.Show(ApplicationTools.startupPath);
-
+            
             var stw = new SettingsWindow();
             stw.ShowDialog();
         }
