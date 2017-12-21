@@ -9,7 +9,8 @@ namespace VocaloidTimeSignal
 {
     static class Player
     {
-        private static string voiceDir = @"D:\Media\Music\wav";
+        //private static string voiceDir = @"D:\Media\Music\wav";
+        private static string voiceDir = ApplicationTools.startupPath +  @"\wav";
         private static NameManager nm_jp = new NameManager(language.Miku_jp, voiceDir);
 
         public static bool Play()

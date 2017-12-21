@@ -44,8 +44,8 @@ namespace VocaloidTimeSignal
         {
             if(DateTime.Now.Minute % timeSpan == 0 && DateTime.Now.Minute != beforeDoneMin)
             {
-                MessageBox.Show("Done");
                 beforeDoneMin = DateTime.Now.Minute;
+                //MessageBox.Show("Done");
                 Player.Play(DateTime.Now);
             }
             Console.WriteLine(DateTime.Now.Minute + "分 / " + 
