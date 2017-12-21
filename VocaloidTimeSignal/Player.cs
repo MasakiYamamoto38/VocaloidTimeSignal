@@ -18,6 +18,7 @@ namespace VocaloidTimeSignal
         public static bool Play(DateTime time)
         {
             var files = nm_jp.GetHourMin(time);
+
             foreach(string file in files)
             {
                 //MessageBox.Show(file);

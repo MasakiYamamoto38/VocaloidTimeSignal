@@ -53,14 +53,14 @@ namespace VocaloidTimeSignal
 
         private void btn_up_Click(object sender, RoutedEventArgs e)
         {
-            if (interval >= 130) return;
+            if (interval >= 90) return;
             interval += 10;
             UpdateControls();
         }
 
         private void btn_dw_Click(object sender, RoutedEventArgs e)
         {
-            if (interval <= 0) return;
+            if (interval <= 10) return;
             interval -= 10;
             UpdateControls();
         }

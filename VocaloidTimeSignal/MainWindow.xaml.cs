@@ -39,12 +39,17 @@ namespace VocaloidTimeSignal
             tm.Start();
         }
 
+        private int beforeDoneMin = -1;
         private void Tm_Elapsed(object sender, ElapsedEventArgs e)
         {
-            if(DateTime.Now.Minute % timeSpan == 0)
+            if(DateTime.Now.Minute % timeSpan == 0 && DateTime.Now.Minute != beforeDoneMin)
             {
+                MessageBox.Show("Done");
+                beforeDoneMin = DateTime.Now.Minute;
                 Player.Play(DateTime.Now);
             }
+            Console.WriteLine(DateTime.Now.Minute + "分 / " + 
+                (DateTime.Now.Minute% timeSpan) + "   /   timeSpan=" + timeSpan);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -58,9 +63,9 @@ namespace VocaloidTimeSignal
 
         private void btn2_Click(object sender, RoutedEventArgs e)
         {
-            
             var stw = new SettingsWindow();
             stw.ShowDialog();
+            timeSpan = VocaloidTimeSignal.Properties.Settings.Default.interval;
         }
     }
 }
