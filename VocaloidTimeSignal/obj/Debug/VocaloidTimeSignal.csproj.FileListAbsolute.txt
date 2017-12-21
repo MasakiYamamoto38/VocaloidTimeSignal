@@ -28,3 +28,5 @@ D:\Media\MyProjects\VocaloidTimeSignal\VocaloidTimeSignal\obj\Debug\VocaloidTime
 D:\Media\MyProjects\VocaloidTimeSignal\VocaloidTimeSignal\obj\Debug\VocaloidTimeSignal.csproj.CoreCompileInputs.cache
 D:\Media\MyProjects\VocaloidTimeSignal\VocaloidTimeSignal\obj\Debug\VocaloidTimeSignal.exe
 D:\Media\MyProjects\VocaloidTimeSignal\VocaloidTimeSignal\obj\Debug\VocaloidTimeSignal.pdb
+D:\Media\MyProjects\VocaloidTimeSignal\VocaloidTimeSignal\obj\Debug\SettingsWindow.g.cs
+D:\Media\MyProjects\VocaloidTimeSignal\VocaloidTimeSignal\obj\Debug\SettingsWindow.baml

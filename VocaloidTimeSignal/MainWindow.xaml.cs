@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Timers;
 
 namespace VocaloidTimeSignal
 {
@@ -20,15 +21,43 @@ namespace VocaloidTimeSignal
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Timer tm;
+        private int timeSpan = 
+            VocaloidTimeSignal.Properties.Settings.Default.interval;
 
         public MainWindow()
         {
             InitializeComponent();
+            MySetup();
+        }
+
+        private void MySetup()
+        {
+            tm = new Timer();
+            tm.Elapsed += Tm_Elapsed;
+            tm.Interval = 500;
+            tm.Start();
+        }
+
+        private void Tm_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            if(DateTime.Now.Minute % timeSpan == 0)
+            {
+                Player.Play(DateTime.Now);
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Player.Play(DateTime.Now);
+        }
+
+        private void btn2_Click(object sender, RoutedEventArgs e)
+        {
+            //MessageBox.Show(ApplicationTools.startupPath);
+
+            var stw = new SettingsWindow();
+            stw.ShowDialog();
         }
     }
 }

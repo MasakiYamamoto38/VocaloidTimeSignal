@@ -1,0 +1,25 @@
+﻿<Window x:Class="VocaloidTimeSignal.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VocaloidTimeSignal"
+        mc:Ignorable="d"
+        Title="Settings" Height="275.822" Width="300">
+    <Grid>
+        <Grid Height="98" Margin="10,10,10.333,0" VerticalAlignment="Top" Background="WhiteSmoke">
+            <Label Content="Choise talk language" HorizontalAlignment="Left" Margin="3,0,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="日本語（日本）" HorizontalAlignment="Left" Margin="22,40,0,0" VerticalAlignment="Top"/>
+            <CheckBox Content="中文（台灣）" HorizontalAlignment="Left" Margin="22,65,0,0" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Height="80" Margin="10,120,10.333,0" VerticalAlignment="Top" Background="WhiteSmoke">
+            <Label Content="Talk time span" HorizontalAlignment="Left" Margin="3,0,0,0" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" Margin="49,24,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Height="49" Width="50" FontSize="38" FontWeight="Bold" Foreground="#FF393939"/>
+            <TextBlock HorizontalAlignment="Left" Margin="97,39,0,0" TextWrapping="Wrap" Text="min" VerticalAlignment="Top" Height="34" Width="50" FontSize="24" FontWeight="Bold" Foreground="#FF393939"/>
+            <Button x:Name="btn_up" Content="▲" HorizontalAlignment="Left" Margin="22,36,0,0" VerticalAlignment="Top" Width="22" Height="12" Background="#FFCBCBCB" Foreground="White" BorderBrush="{x:Null}" FontSize="10"/>
+            <Button x:Name="btn_dw" Content="▼" HorizontalAlignment="Left" Margin="22,55,0,0" VerticalAlignment="Top" Width="22" Height="12" Background="#FFCBCBCB" Foreground="White" BorderBrush="{x:Null}" FontSize="10"/>
+        </Grid>
+        <Button Content="Close" Margin="10,0,10.333,9" VerticalAlignment="Bottom"/>
+
+    </Grid>
+</Window>
